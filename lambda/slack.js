@@ -6,14 +6,16 @@ const web = new WebClient(token)
 
 const MESSAGE = 'here is a fresh chemex'
 
-function thing () {
-  web.chat.postMessage('slack-tests', MESSAGE, function(err, res) {
-      if (err) {
-          console.log('Error:', err)
-      } else {
-          console.log('Message sent: ', res)
-      }
-  })
+function sendSlackMessage(event) {
+
+
+    web.chat.postMessage('slack-tests', MESSAGE, function(err, res) {
+        if (err) {
+            console.log('Error:', err)
+        } else {
+            console.log('Message sent: ', res)
+        }
+    })
 }
 
-module.exports = thing
+module.exports = sendSlackMessage
