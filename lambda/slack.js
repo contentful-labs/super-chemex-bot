@@ -4,9 +4,14 @@ const WebClient = require('@slack/client').WebClient
 const token = process.env.SLACK_API_TOKEN
 const web = new WebClient(token)
 const contentful = require('./contentful')
-const contentfulConfig = contentful.getConfig()
+let contentfulConfig = contentful.getConfig()
 
 function sendSlackMessage(event) {
+  if (event.clickType === 'LONG') {
+    contentfulConfig = contentful.getConfig()
+    console.log('Reset Contentful cache after long press')
+    return;
+  }
   contentfulConfig.then(function (config) {
     const channel = config.configuration[event.serialNumber].channel
     const messageIdx = Math.floor(Math.random() * config.message.length)
