@@ -1,5 +1,7 @@
 'use strict';
 
+const slack = require('./slack')
+
 exports.handler = (event, context, callback) => {
-    callback(null, 'Hello from Lambda 2.0');
-};
+    slack()
+}
