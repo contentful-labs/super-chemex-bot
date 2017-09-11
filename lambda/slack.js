@@ -7,11 +7,6 @@ const contentful = require('./contentful')
 let contentfulConfig = contentful.getConfig()
 
 function sendSlackMessage(event) {
-  if (event.clickType === 'LONG') {
-    contentfulConfig = contentful.getConfig()
-    console.log('Reset Contentful cache after long press')
-    return;
-  }
   contentfulConfig.then(function (config) {
     const channel = config.configuration[event.serialNumber].channel
     const messageIdx = Math.floor(Math.random() * config.message.length)
