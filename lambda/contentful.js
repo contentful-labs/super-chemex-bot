@@ -1,3 +1,5 @@
+'use strict';
+
 const contentful = require('contentful')
 const token = process.env.CONTENTFUL_ACCESS_TOKEN
 
@@ -6,7 +8,7 @@ const client = contentful.createClient({
   accessToken: token
 })
 
-function getConfig () {
+function getAll () {
   return client.getEntries({limit: 1000}).then(function (entries) {
     return entries.items.reduce(function (acc, entry) {
       acc[entry.sys.contentType.sys.id].push(entry)
@@ -30,5 +32,5 @@ function getConfig () {
 }
 
 module.exports = {
-  getConfig: getConfig
+  getAll
 }
