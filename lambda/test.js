@@ -1,6 +1,6 @@
 'use strict';
 
-const slack = require('./slack')
+const handler = require('./index').handler
 
 const event = {
     serialNumber: 'G030MD0293769WPT',
@@ -8,4 +8,4 @@ const event = {
     clickType: 'SINGLE'
 }
 
-slack(event)
+handler(event)
