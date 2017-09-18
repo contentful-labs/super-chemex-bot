@@ -2,9 +2,10 @@
 
 const contentful = require('contentful')
 const token = process.env.CONTENTFUL_ACCESS_TOKEN
+const spaceId = process.env.CONTENTFUL_SPACE_ID
 
 const client = contentful.createClient({
-  space: 'uh6yazckojzf',
+  space: spaceId,
   accessToken: token
 })
 
