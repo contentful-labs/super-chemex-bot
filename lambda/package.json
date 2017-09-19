@@ -1,4 +1,5 @@
 {
+  "license": "MIT",
   "dependencies": {
     "@slack/client": "^3.9.0",
     "contentful": "^4.1.2"
