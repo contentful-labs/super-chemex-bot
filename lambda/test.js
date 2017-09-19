@@ -3,7 +3,7 @@
 const handler = require('./index').handler
 
 const event = {
-    serialNumber: 'G030MD0293769WPT',
+    serialNumber: process.env.CHEMEX_BUTTON_SERIAL,
     batteryVoltage: '1577mV',
     clickType: 'SINGLE'
 }
