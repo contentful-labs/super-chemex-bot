@@ -9,6 +9,12 @@ exports.handler = (event) => {
     const randomMessageIdx = Math.floor(Math.random() * data.message.length)
     const {message} = data.message[randomMessageIdx]
 
-    slack.send(channel, message)
+    return slack.send(channel, message)
+  })
+  .then(function(res) {
+    console.log('Message sent: ', res)
+  })
+  .catch(function (error) {
+    console.error(error);
   })
 }
