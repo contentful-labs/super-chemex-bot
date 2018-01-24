@@ -22,13 +22,13 @@ fi
 rm super-chemex-bot.zip 2>/dev/null
 
 echo "Zipping the lambda/ directory..."
-zip -r -X super-chemex-bot.zip lambda/*
+cd lambda; zip -q -r -X ../super-chemex-bot.zip *; cd ..
 
 echo "Deploying to AWS..."
-aws lambda update-function-code --function-name $1 --zip-file fileb://super-chemex-bot.zip
+aws lambda update-function-code --function-name $1 --zip-file fileb://super-chemex-bot.zip >/dev/null
 
 if [ "$?" -eq "255" ]; then
     echo "super-chemex-bot couldn't deploy to AWS properly. Check the function name and try again."
 else
-    echo "super-chemex-bot deployed! Test with 'test.sh'."
+    echo "super-chemex-bot deployed!"
 fi
