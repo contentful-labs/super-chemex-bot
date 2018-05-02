@@ -1,0 +1,3103 @@
+{
+  "contentTypes": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "spaceId"
+          }
+        },
+        "id": "configuration",
+        "type": "ContentType",
+        "createdAt": "2017-04-11T19:23:35.612Z",
+        "updatedAt": "2017-04-11T19:23:36.016Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedVersion": 1,
+        "firstPublishedAt": "2017-04-11T19:23:36.001Z",
+        "publishedAt": "2017-04-11T19:23:36.001Z"
+      },
+      "displayField": "deviceSerialNumber",
+      "name": "Configuration",
+      "description": "",
+      "fields": [
+        {
+          "id": "deviceSerialNumber",
+          "name": "Device Serial Number",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "slackChannel",
+          "name": "Slack Channel",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "spaceId"
+          }
+        },
+        "id": "message",
+        "type": "ContentType",
+        "createdAt": "2017-04-11T19:24:25.669Z",
+        "updatedAt": "2017-04-11T19:24:26.141Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedVersion": 1,
+        "firstPublishedAt": "2017-04-11T19:24:26.123Z",
+        "publishedAt": "2017-04-11T19:24:26.123Z"
+      },
+      "displayField": "message",
+      "name": "Message",
+      "description": "",
+      "fields": [
+        {
+          "id": "message",
+          "name": "Message",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    }
+  ],
+  "editorInterfaces": [
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "spaceId",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2017-04-11T19:23:36.367Z",
+        "createdBy": {
+          "sys": {
+            "id": "userId",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2017-04-11T19:23:38.862Z",
+        "updatedBy": {
+          "sys": {
+            "id": "userId",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "configuration",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "deviceSerialNumber",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "slackChannel",
+          "widgetId": "singleLine"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "spaceId",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2017-04-11T19:24:26.284Z",
+        "createdBy": {
+          "sys": {
+            "id": "userId",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2017-04-11T19:24:27.004Z",
+        "updatedBy": {
+          "sys": {
+            "id": "userId",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "message",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "message",
+          "widgetId": "singleLine"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "spaceId"
+          }
+        },
+        "id": "3DhxJSq6re6c6sQ2u0sOK8",
+        "type": "Entry",
+        "createdAt": "2017-04-11T19:26:00.911Z",
+        "updatedAt": "2017-04-11T20:35:18.897Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 31,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedVersion": 30,
+        "firstPublishedAt": "2017-04-11T19:26:10.660Z",
+        "publishedAt": "2017-04-11T20:35:18.857Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "message"
+          }
+        }
+      },
+      "fields": {
+        "message": {
+          "en-US": "Grab a chemex from the kitchen!"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "spaceId"
+          }
+        },
+        "id": "6kg7GqFGV2A6SWMsgoOegc",
+        "type": "Entry",
+        "createdAt": "2017-04-11T20:14:16.892Z",
+        "updatedAt": "2017-04-11T20:14:24.767Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 15,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedVersion": 14,
+        "firstPublishedAt": "2017-04-11T20:14:24.739Z",
+        "publishedAt": "2017-04-11T20:14:24.739Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "message"
+          }
+        }
+      },
+      "fields": {
+        "message": {
+          "en-US": "Fresh chemex is in the kitchen!"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "spaceId"
+          }
+        },
+        "id": "4LJ4DpoljG8C0mGYKMK6Ku",
+        "type": "Entry",
+        "createdAt": "2017-04-12T19:47:09.247Z",
+        "updatedAt": "2017-04-13T10:38:05.102Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 13,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedVersion": 12,
+        "firstPublishedAt": "2017-04-12T19:47:44.256Z",
+        "publishedAt": "2017-04-13T10:38:05.078Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "message"
+          }
+        }
+      },
+      "fields": {
+        "message": {
+          "en-US": "<!here> ☕️"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "spaceId"
+          }
+        },
+        "id": "3DRQsXEdyEgyK6iEIwiquU",
+        "type": "Entry",
+        "createdAt": "2017-04-12T19:49:28.079Z",
+        "updatedAt": "2017-04-12T19:49:33.982Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 11,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedVersion": 10,
+        "firstPublishedAt": "2017-04-12T19:49:33.951Z",
+        "publishedAt": "2017-04-12T19:49:33.951Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "message"
+          }
+        }
+      },
+      "fields": {
+        "message": {
+          "en-US": "rocket fuel is ready"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "spaceId"
+          }
+        },
+        "id": "3dhwoyOjlYCMEcK2Su4QA0",
+        "type": "Entry",
+        "createdAt": "2017-04-12T19:51:12.507Z",
+        "updatedAt": "2017-04-12T19:51:39.841Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 14,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedVersion": 13,
+        "firstPublishedAt": "2017-04-12T19:51:39.818Z",
+        "publishedAt": "2017-04-12T19:51:39.818Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "message"
+          }
+        }
+      },
+      "fields": {
+        "message": {
+          "en-US": "GOOOOOOOOOOD MORNING "
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "spaceId"
+          }
+        },
+        "id": "29qagkPJle06OsiyMKCA20",
+        "type": "Entry",
+        "createdAt": "2017-04-13T11:29:01.100Z",
+        "updatedAt": "2017-04-13T11:29:23.594Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 41,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedVersion": 40,
+        "firstPublishedAt": "2017-04-13T11:29:23.566Z",
+        "publishedAt": "2017-04-13T11:29:23.566Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "message"
+          }
+        }
+      },
+      "fields": {
+        "message": {
+          "en-US": "Get some coffee into ya!"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "spaceId"
+          }
+        },
+        "id": "417JSUADVS08QAAw8cAAmO",
+        "type": "Entry",
+        "createdAt": "2017-04-13T11:29:45.058Z",
+        "updatedAt": "2017-04-13T11:29:54.526Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 19,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedVersion": 18,
+        "firstPublishedAt": "2017-04-13T11:29:54.500Z",
+        "publishedAt": "2017-04-13T11:29:54.500Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "message"
+          }
+        }
+      },
+      "fields": {
+        "message": {
+          "en-US": "May your coffee kick in before reality does."
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "spaceId"
+          }
+        },
+        "id": "6x3nRzbDaMq8cOAceEgOy2",
+        "type": "Entry",
+        "createdAt": "2017-04-13T11:30:21.691Z",
+        "updatedAt": "2017-04-13T11:30:30.444Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 16,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedVersion": 15,
+        "firstPublishedAt": "2017-04-13T11:30:30.411Z",
+        "publishedAt": "2017-04-13T11:30:30.411Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "message"
+          }
+        }
+      },
+      "fields": {
+        "message": {
+          "en-US": "Coffee - the most important meal of the day!"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "spaceId"
+          }
+        },
+        "id": "72ZiXOhqRUmmOG6qeIc2ye",
+        "type": "Entry",
+        "createdAt": "2017-04-13T11:30:37.788Z",
+        "updatedAt": "2017-04-13T11:30:53.214Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 27,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedVersion": 26,
+        "firstPublishedAt": "2017-04-13T11:30:53.186Z",
+        "publishedAt": "2017-04-13T11:30:53.186Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "message"
+          }
+        }
+      },
+      "fields": {
+        "message": {
+          "en-US": "I'm not addicted to coffee - we're just in a committed relationship."
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "spaceId"
+          }
+        },
+        "id": "5IZldzvyrm8qqOgMUaqkaC",
+        "type": "Entry",
+        "createdAt": "2017-04-13T11:30:55.449Z",
+        "updatedAt": "2017-04-13T11:31:09.617Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 15,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedVersion": 14,
+        "firstPublishedAt": "2017-04-13T11:31:09.593Z",
+        "publishedAt": "2017-04-13T11:31:09.593Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "message"
+          }
+        }
+      },
+      "fields": {
+        "message": {
+          "en-US": "0xC0FFEE"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "spaceId"
+          }
+        },
+        "id": "2pcWjeAi8AWkiUCAk8wkaC",
+        "type": "Entry",
+        "createdAt": "2017-04-13T11:31:13.121Z",
+        "updatedAt": "2017-04-13T11:31:26.005Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 23,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedVersion": 22,
+        "firstPublishedAt": "2017-04-13T11:31:25.971Z",
+        "publishedAt": "2017-04-13T11:31:25.971Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "message"
+          }
+        }
+      },
+      "fields": {
+        "message": {
+          "en-US": "I only need coffee on days ending in \"y\"."
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "spaceId"
+          }
+        },
+        "id": "1F7ZSmTOzS24wQ2oS2oUce",
+        "type": "Entry",
+        "createdAt": "2017-04-13T11:32:02.571Z",
+        "updatedAt": "2017-04-13T11:32:13.665Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 23,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedVersion": 22,
+        "firstPublishedAt": "2017-04-13T11:32:13.638Z",
+        "publishedAt": "2017-04-13T11:32:13.638Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "message"
+          }
+        }
+      },
+      "fields": {
+        "message": {
+          "en-US": "It puts the coffee in the basket, or else it gets the hose again."
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "spaceId"
+          }
+        },
+        "id": "1gvhUg4dIisGCgwMAGISoY",
+        "type": "Entry",
+        "createdAt": "2017-04-13T11:33:33.789Z",
+        "updatedAt": "2017-05-26T11:42:50.267Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedVersion": 6,
+        "firstPublishedAt": "2017-04-13T11:33:43.801Z",
+        "publishedAt": "2017-05-26T11:42:50.236Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "message"
+          }
+        }
+      },
+      "fields": {
+        "message": {
+          "en-US": "If it wasn't for the coffee, I'd have no identifiable personality whatsoever."
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "spaceId"
+          }
+        },
+        "id": "4s8yvFWv3Ws0mqEMesGmwM",
+        "type": "Entry",
+        "createdAt": "2017-04-18T18:17:28.075Z",
+        "updatedAt": "2017-04-18T18:18:13.179Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 9,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedVersion": 8,
+        "firstPublishedAt": "2017-04-18T18:18:13.153Z",
+        "publishedAt": "2017-04-18T18:18:13.153Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "message"
+          }
+        }
+      },
+      "fields": {
+        "message": {
+          "en-US": "grab a no-fat-caramel-soy-frappecino in the kitchen..... lol, jk :)"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "spaceId"
+          }
+        },
+        "id": "6h9xKNwpkQSY2c0yauI6ac",
+        "type": "Entry",
+        "createdAt": "2017-05-31T06:22:47.374Z",
+        "updatedAt": "2017-05-31T06:22:54.434Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedVersion": 5,
+        "firstPublishedAt": "2017-05-31T06:22:54.408Z",
+        "publishedAt": "2017-05-31T06:22:54.408Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "message"
+          }
+        }
+      },
+      "fields": {
+        "message": {
+          "en-US": "covfefe is ready"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "spaceId"
+          }
+        },
+        "id": "15qdrpS1BWCiksOGM8umYc",
+        "type": "Entry",
+        "createdAt": "2017-06-07T08:22:42.260Z",
+        "updatedAt": "2017-06-07T08:23:40.185Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedVersion": 3,
+        "firstPublishedAt": "2017-06-07T08:23:40.157Z",
+        "publishedAt": "2017-06-07T08:23:40.157Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "message"
+          }
+        }
+      },
+      "fields": {
+        "message": {
+          "en-US": "https://media.giphy.com/media/NHUONhmbo448/giphy.gif"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "spaceId"
+          }
+        },
+        "id": "1XqPXmUZxe0uiuw6oYYIsM",
+        "type": "Entry",
+        "createdAt": "2017-07-19T12:38:03.180Z",
+        "updatedAt": "2017-07-19T12:38:33.667Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 22,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedVersion": 21,
+        "firstPublishedAt": "2017-07-19T12:38:33.642Z",
+        "publishedAt": "2017-07-19T12:38:33.642Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "message"
+          }
+        }
+      },
+      "fields": {
+        "message": {
+          "en-US": "Wanna hear a joke?\\n\\n\\n\\n\\n\\nDecaf.\\n"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "spaceId"
+          }
+        },
+        "id": "3EsTyAi6IM2MiSAmwwgUwa",
+        "type": "Entry",
+        "createdAt": "2017-07-19T12:43:41.793Z",
+        "updatedAt": "2017-07-19T12:43:48.904Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedVersion": 3,
+        "firstPublishedAt": "2017-07-19T12:43:48.883Z",
+        "publishedAt": "2017-07-19T12:43:48.883Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "message"
+          }
+        }
+      },
+      "fields": {
+        "message": {
+          "en-US": "https://media.giphy.com/media/3o7buf6ABP3J7NpNS0/giphy.gif"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "spaceId"
+          }
+        },
+        "id": "56Q7ggwT5K0iawc4yueKQm",
+        "type": "Entry",
+        "createdAt": "2017-09-29T15:58:32.737Z",
+        "updatedAt": "2017-09-29T15:58:41.279Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 14,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedVersion": 13,
+        "firstPublishedAt": "2017-09-29T15:58:41.279Z",
+        "publishedAt": "2017-09-29T15:58:41.279Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "message"
+          }
+        }
+      },
+      "fields": {
+        "message": {
+          "en-US": "Got some chemex ready for ya https://media.giphy.com/media/l2SpXensc5RhNzfK8/giphy.gif"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "spaceId"
+          }
+        },
+        "id": "2uxRGdabrK6gwGgsGG4gwE",
+        "type": "Entry",
+        "createdAt": "2017-09-29T16:06:39.670Z",
+        "updatedAt": "2017-09-29T16:06:48.769Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 15,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedVersion": 14,
+        "firstPublishedAt": "2017-09-29T16:06:48.769Z",
+        "publishedAt": "2017-09-29T16:06:48.769Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "message"
+          }
+        }
+      },
+      "fields": {
+        "message": {
+          "en-US": "Ooh yeah coffee in the kitchen https://media.giphy.com/media/Z6vszQ8Mweukw/giphy.gif"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "spaceId"
+          }
+        },
+        "id": "4QTdqvzbUki8ESo4WwGaSw",
+        "type": "Entry",
+        "createdAt": "2017-09-29T16:07:17.212Z",
+        "updatedAt": "2017-09-29T16:07:33.560Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedVersion": 4,
+        "firstPublishedAt": "2017-09-29T16:07:33.560Z",
+        "publishedAt": "2017-09-29T16:07:33.560Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "message"
+          }
+        }
+      },
+      "fields": {
+        "message": {
+          "en-US": "😘 https://media.giphy.com/media/27Ju5pmIEgv04/giphy.gif"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "spaceId"
+          }
+        },
+        "id": "3UBRCBtXXqG228OSIYQ4Cc",
+        "type": "Entry",
+        "createdAt": "2017-09-29T16:08:09.885Z",
+        "updatedAt": "2017-09-29T16:08:18.932Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 18,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedVersion": 17,
+        "firstPublishedAt": "2017-09-29T16:08:18.932Z",
+        "publishedAt": "2017-09-29T16:08:18.932Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "message"
+          }
+        }
+      },
+      "fields": {
+        "message": {
+          "en-US": "Come and get it https://media.giphy.com/media/iKNufEI6wBJKg/giphy.gif"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "spaceId"
+          }
+        },
+        "id": "2oEL3ThIfmy80cgSow2YyW",
+        "type": "Entry",
+        "createdAt": "2017-09-29T16:08:30.027Z",
+        "updatedAt": "2017-09-29T16:08:39.970Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 16,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedVersion": 15,
+        "firstPublishedAt": "2017-09-29T16:08:39.970Z",
+        "publishedAt": "2017-09-29T16:08:39.970Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "message"
+          }
+        }
+      },
+      "fields": {
+        "message": {
+          "en-US": "Please drink responsibly https://media.giphy.com/media/oZEBLugoTthxS/giphy.gif"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "spaceId"
+          }
+        },
+        "id": "5hVDSmBqWIQM8usISmoGEy",
+        "type": "Entry",
+        "createdAt": "2017-09-29T16:09:38.739Z",
+        "updatedAt": "2017-09-29T16:10:21.413Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 34,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedVersion": 33,
+        "firstPublishedAt": "2017-09-29T16:10:21.413Z",
+        "publishedAt": "2017-09-29T16:10:21.413Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "message"
+          }
+        }
+      },
+      "fields": {
+        "message": {
+          "en-US": "If you were ground coffee, you'd be espresso. 'Cause you're so fine 😉"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "spaceId"
+          }
+        },
+        "id": "3xwRgtORJ64I0UKeqakoiu",
+        "type": "Entry",
+        "createdAt": "2017-09-29T16:10:28.725Z",
+        "updatedAt": "2017-09-29T16:10:52.853Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 21,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedVersion": 20,
+        "firstPublishedAt": "2017-09-29T16:10:52.853Z",
+        "publishedAt": "2017-09-29T16:10:52.853Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "message"
+          }
+        }
+      },
+      "fields": {
+        "message": {
+          "en-US": "Hold the sugar, baby. You're sweet enough ❤️"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "spaceId"
+          }
+        },
+        "id": "6nevj1cvbGQAk8g0yUEAoy",
+        "type": "Entry",
+        "createdAt": "2017-09-29T16:10:56.983Z",
+        "updatedAt": "2017-09-29T16:20:27.890Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 32,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedVersion": 31,
+        "firstPublishedAt": "2017-09-29T16:12:33.015Z",
+        "publishedAt": "2017-09-29T16:20:27.890Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "message"
+          }
+        }
+      },
+      "fields": {
+        "message": {
+          "en-US": "I feel something brewing between us 😏"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "spaceId"
+          }
+        },
+        "id": "1smayDMEzaAq60EG4MSAcE",
+        "type": "Entry",
+        "createdAt": "2017-09-29T16:14:29.285Z",
+        "updatedAt": "2017-09-29T16:14:42.845Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 17,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedVersion": 16,
+        "firstPublishedAt": "2017-09-29T16:14:42.845Z",
+        "publishedAt": "2017-09-29T16:14:42.845Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "message"
+          }
+        }
+      },
+      "fields": {
+        "message": {
+          "en-US": "You roast my heart ❤️"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "spaceId"
+          }
+        },
+        "id": "29a9tWNX0kOEc8qi64k08e",
+        "type": "Entry",
+        "createdAt": "2017-09-29T16:16:10.308Z",
+        "updatedAt": "2017-09-29T16:19:23.446Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 18,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedVersion": 17,
+        "firstPublishedAt": "2017-09-29T16:19:23.446Z",
+        "publishedAt": "2017-09-29T16:19:23.446Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "message"
+          }
+        }
+      },
+      "fields": {
+        "message": {
+          "en-US": "Get some coffee while it lasts https://media.giphy.com/media/4ooNgw93JL332/giphy.gif"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "spaceId"
+          }
+        },
+        "id": "v3KDDQwcASuKwgUY6O2as",
+        "type": "Entry",
+        "createdAt": "2017-09-29T16:19:40.970Z",
+        "updatedAt": "2017-09-29T16:19:48.132Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 12,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedVersion": 11,
+        "firstPublishedAt": "2017-09-29T16:19:48.132Z",
+        "publishedAt": "2017-09-29T16:19:48.132Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "message"
+          }
+        }
+      },
+      "fields": {
+        "message": {
+          "en-US": "COFFEE IN THE KITCHEN https://media.giphy.com/media/10sKNgit3jiU2A/giphy.gif"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "spaceId"
+          }
+        },
+        "id": "mj5ElnULKg6cskMQuOoQs",
+        "type": "Entry",
+        "createdAt": "2017-09-29T16:20:37.489Z",
+        "updatedAt": "2017-09-29T16:20:57.564Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 13,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedVersion": 12,
+        "firstPublishedAt": "2017-09-29T16:20:57.564Z",
+        "publishedAt": "2017-09-29T16:20:57.564Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "message"
+          }
+        }
+      },
+      "fields": {
+        "message": {
+          "en-US": "Are you coffee? 'Cause I’ve bean thinking about you a latte 😉"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "spaceId"
+          }
+        },
+        "id": "4XvRj3Jutycms6cAU6yaka",
+        "type": "Entry",
+        "createdAt": "2017-09-29T16:21:57.180Z",
+        "updatedAt": "2017-09-29T16:22:20.286Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 13,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "publishedVersion": 12,
+        "firstPublishedAt": "2017-09-29T16:22:20.286Z",
+        "publishedAt": "2017-09-29T16:22:20.286Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "message"
+          }
+        }
+      },
+      "fields": {
+        "message": {
+          "en-US": "Mate, tea, or just more of me? 😏"
+        }
+      }
+    }
+  ],
+  "assets": [
+  ],
+  "locales": [
+    {
+      "name": "U.S. English",
+      "code": "en-US",
+      "fallbackCode": null,
+      "default": true,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "0PJaFjgqvidLfPeA9NuDa4",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "spaceId"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "master"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "createdAt": "2017-04-11T19:22:20Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "updatedAt": "2017-04-11T19:22:20Z"
+      }
+    }
+  ],
+  "webhooks": [
+  ],
+  "roles": [
+    {
+      "name": "Developer",
+      "description": "Allows reading Entries and managing API Keys",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": "all"
+      },
+      "sys": {
+        "type": "Role",
+        "id": "0PK4k7oJi2TubN042FX7uQ",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "spaceId"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "createdAt": "2017-04-11T19:22:20Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "updatedAt": "2017-04-11T19:22:20Z"
+      }
+    },
+    {
+      "name": "Editor",
+      "description": "Allows editing, publishing and archiving of content",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ]
+      },
+      "sys": {
+        "type": "Role",
+        "id": "0PLazVvlRyKpxjdhDWFlLu",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "spaceId"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "createdAt": "2017-04-11T19:22:20Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "updatedAt": "2017-04-11T19:22:20Z"
+      }
+    },
+    {
+      "name": "Author",
+      "description": "Allows editing of content",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": [
+            "create"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "update"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "create"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "update"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ]
+      },
+      "sys": {
+        "type": "Role",
+        "id": "3G6wrBe86dziXBuq0ZnUxM",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "spaceId"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "createdAt": "2017-07-06T12:20:50Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "updatedAt": "2017-07-06T12:20:50Z"
+      }
+    },
+    {
+      "name": "Freelancer",
+      "description": "Allows only editing of content they created themselves",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": [
+            "create"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "create"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              },
+              {
+                "equals": [
+                  {
+                    "doc": "sys.createdBy.sys.id"
+                  },
+                  "User.current()"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "update"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              },
+              {
+                "equals": [
+                  {
+                    "doc": "sys.createdBy.sys.id"
+                  },
+                  "User.current()"
+                ]
+              },
+              {
+                "paths": [
+                  {
+                    "doc": "fields.%.%"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "delete"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              },
+              {
+                "equals": [
+                  {
+                    "doc": "sys.createdBy.sys.id"
+                  },
+                  "User.current()"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              },
+              {
+                "equals": [
+                  {
+                    "doc": "sys.createdBy.sys.id"
+                  },
+                  "User.current()"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "update"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              },
+              {
+                "equals": [
+                  {
+                    "doc": "sys.createdBy.sys.id"
+                  },
+                  "User.current()"
+                ]
+              },
+              {
+                "paths": [
+                  {
+                    "doc": "fields.%.%"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "delete"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              },
+              {
+                "equals": [
+                  {
+                    "doc": "sys.createdBy.sys.id"
+                  },
+                  "User.current()"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ]
+      },
+      "sys": {
+        "type": "Role",
+        "id": "3G7OWXLnogaif2magkGHau",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "spaceId"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "createdAt": "2017-07-06T12:20:50Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "updatedAt": "2017-07-06T12:20:50Z"
+      }
+    },
+    {
+      "name": "Translator 1",
+      "description": "Allows editing of localized fields in the specified language",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "update"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              },
+              {
+                "paths": [
+                  {
+                    "doc": "fields.%.%"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "update"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              },
+              {
+                "paths": [
+                  {
+                    "doc": "fields.%.%"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ]
+      },
+      "sys": {
+        "type": "Role",
+        "id": "3G948TgZklObWv9X1tGD9Y",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "spaceId"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "createdAt": "2017-07-06T12:20:50Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "updatedAt": "2017-07-06T12:20:50Z"
+      }
+    },
+    {
+      "name": "Translator 2",
+      "description": "Allows editing of localized fields in the specified language",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "update"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              },
+              {
+                "paths": [
+                  {
+                    "doc": "fields.%.%"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "update"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              },
+              {
+                "paths": [
+                  {
+                    "doc": "fields.%.%"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ]
+      },
+      "sys": {
+        "type": "Role",
+        "id": "3Gath7RvkijmnS9CfdB738",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "spaceId"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "createdAt": "2017-07-06T12:20:50Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "updatedAt": "2017-07-06T12:20:50Z"
+      }
+    },
+    {
+      "name": "Translator 3",
+      "description": "Allows editing of localized fields in the specified language",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "update"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              },
+              {
+                "paths": [
+                  {
+                    "doc": "fields.%.%"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "update"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              },
+              {
+                "paths": [
+                  {
+                    "doc": "fields.%.%"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ]
+      },
+      "sys": {
+        "type": "Role",
+        "id": "3GbEjIQMrAHClDqSayCO6W",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "spaceId"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "createdAt": "2017-07-06T12:20:50Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "userId"
+          }
+        },
+        "updatedAt": "2017-07-06T12:20:50Z"
+      }
+    }
+  ]
+}
