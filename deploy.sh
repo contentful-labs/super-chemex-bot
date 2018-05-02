@@ -1,12 +1,8 @@
 #!/usr/bin/env bash
 
-usage() {
-    echo "Usage: deploy.sh <lambda-function-name>"
-}
-
 if [ -z "$1" ]; then
     echo "Provide a function name."
-    usage
+    echo "Usage: deploy.sh <lambda-function-name>"
     exit 1
 fi
 
