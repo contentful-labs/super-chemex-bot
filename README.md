@@ -12,12 +12,9 @@ Super Chemex Bot is only a small piece of code but requires a bit of configurati
 
  * Clone this repository
  * `cd` into the `lambda` directory and run `npm install` (`yarn install` is also supported).
- * Set up a Contentful space.
-   * You'll need to create two content types
-     * One with the ID `configuration` and two short text fields with the IDs `deviceSerialNumber` and `slackChannel`
-     * The other with the ID `message` and a short text field with the ID `message`
-   * Create at least one entry for each of these content types. One mapping a button serial number to a slack channel, the other with the message you want to post.
-   * Create an API key. You'll need it later.
+ * Sign up for Contentful if you haven't already.
+   * Follow the [instructions](https://www.contentful.com/r/knowledgebase/personal-access-tokens/#how-to-get-a-personal-access-token-the-web-app) to create a personal access token
+   * Execute `./setups-space.js --management-token <your-personal-access-token>`
  * Create a Slack app
   * Go to the Slack [app wizard](https://api.slack.com/apps?new_app=1). Give your app a name and select a workspace.
   * Give the app the scope `chat:write:bot`

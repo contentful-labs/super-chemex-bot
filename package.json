@@ -1,0 +1,9 @@
+{
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "commander": "^2.15.1",
+    "contentful-import": "^7.0.1",
+    "contentful-management": "^5.0.0"
+  }
+}
