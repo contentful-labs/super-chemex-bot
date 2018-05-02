@@ -27,8 +27,7 @@ Super Chemex Bot is only a small piece of code but requires a bit of configurati
    * Choose to create an AWS Lambda function that is triggered by your button
    * Add three environment variables to the Lambda function: `SLACK_API_TOKEN`, `CONTENTFUL_ACCESS_TOKEN`, `CONTENTFUL_SPACE_ID`
    * [Install](http://docs.aws.amazon.com/cli/latest/userguide/installing.html) and [configure](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html#cli-quick-configuration) the AWS cli.
-   * Open `deploy.sh` and change the value after `--function-name` to the name of your new Lambda function
-   * Navigate to the project root folder and run `./deploy.sh`
+   * Navigate to the project root folder and run `./deploy.sh <function-name>`
  * All done!
 
 License
