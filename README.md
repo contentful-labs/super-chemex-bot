@@ -30,4 +30,4 @@ Super Chemex Bot is only a small piece of code but requires a bit of configurati
 License
 =======
 
-Copyright (c) 2017 Contentful GmbH. Code released under the MIT license. See [LICENSE][LICENSE] for further details.
+Copyright (c) 2017-2018 Contentful GmbH. Code released under the MIT license. See [LICENSE][LICENSE] for further details.
