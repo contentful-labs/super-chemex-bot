@@ -1,7 +1,7 @@
 Super Chemex Bot
 ================
 
-Our friendly bot-overlord notifying people when there is freshly brewed coffee in the kitchen.
+Our friendly bot-overlord notifying people when there is freshly brewed coffee in the kitchen. You can read the story of how this bot came be on [our blog](https://www.contentful.com/blog/2017/09/27/super-chemex-bot/).
 
 Super Chemex Bot is a Slack app that posts a message in channel when an AWS IoT button is pressed.
 
