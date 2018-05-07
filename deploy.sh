@@ -23,7 +23,7 @@ cd lambda; zip -q -r -X ../super-chemex-bot.zip *; cd ..
 echo "Deploying to AWS..."
 aws lambda update-function-code --function-name $1 --zip-file fileb://super-chemex-bot.zip >/dev/null
 
-if [ "$?" -eq "255" ]; then
+if [ "$?" -ne "0" ]; then
     echo "super-chemex-bot couldn't deploy to AWS properly. Check the function name and try again."
 else
     echo "super-chemex-bot deployed!"
