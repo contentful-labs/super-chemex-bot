@@ -2,7 +2,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "@slack/client": "^3.9.0",
-    "contentful": "^4.1.2"
+    "@slack/client": "^5.0.2",
+    "contentful": "^7.9.1"
   }
 }
