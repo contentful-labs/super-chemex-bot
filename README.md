@@ -1,6 +1,13 @@
 Super Chemex Bot
 ================
 
+❗ Disclaimer
+=====
+
+**This project is not actively maintained or monitored.** Feel free to fork and work on it in your account. If you want to maintain but also collaborate with fellow developers, feel free to reach out to [Contentful's Developer Relations](mailto:devrel-mkt@contentful.com) team to move the project into our community GitHub organisation [contentful-userland](https://github.com/contentful-userland/).
+
+---------
+
 Our friendly bot-overlord notifying people when there is freshly brewed coffee in the kitchen. You can read the story of how this bot came be on [our blog](https://www.contentful.com/blog/2017/09/27/super-chemex-bot/).
 
 Super Chemex Bot is a Slack app that posts a message in channel when an AWS IoT button is pressed.
